@@ -8,7 +8,6 @@ public class OutputView {
     }
 
     public void printMoveResult(List<Car> carList){
-        System.out.println("실행 결과");
         for(Car car: carList){
             printCar(car);
         }
@@ -20,12 +19,13 @@ public class OutputView {
         for(int i = 0; i < car.getPosition(); i++){
             System.out.print("-");
         }
+        System.out.println();
     }
 
     public void printWinner(List<Car> winners){
         System.out.print("최종 우승자 : ");
         if(winners.size() == 1){
-            System.out.println(winners.get(0));
+            System.out.println(winners.get(0).getName());
             return;
         }
         for(int i = 0; i < winners.size(); i++){
