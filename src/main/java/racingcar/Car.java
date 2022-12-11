@@ -31,4 +31,12 @@ public class Car {
     public boolean equal(Car other){
         return this.position == other.position;
     }
+
+    public String getName(){
+        return name;
+    }
+
+    public int getPosition(){
+        return position;
+    }
 }
