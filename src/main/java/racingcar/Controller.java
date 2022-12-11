@@ -34,5 +34,7 @@ public class Controller {
             carList.tryMoveAll();
             outputView.printMoveResult(carList.getCarList());
         }
+
+        outputView.printWinner(carList.winner());
     }
 }
