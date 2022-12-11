@@ -13,4 +13,11 @@ public class Car {
             position++;
         }
     }
+
+    public Car compare(Car other){
+        if(this.position > other.position){
+            return this;
+        }
+        return other;
+    }
 }
