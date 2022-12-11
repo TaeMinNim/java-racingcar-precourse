@@ -24,4 +24,20 @@ public class InputView {
         strings = nameString.split("/");
         return Arrays.asList(strings);
     }
+
+    public int inputCount(){
+        System.out.println("시도할 회수는 몇회인가요?");
+        String countString = Console.readLine();
+        int countInteger = toInteger(countString);
+    }
+
+    private int toInteger(String countString){
+        int countInteger;
+        try{
+            countInteger = Integer.parseInt(countString);
+        } catch (NumberFormatException e){
+            throw new IllegalArgumentException("올바른 값을 입력해주세요.");
+        }
+        return countInteger;
+    }
 }
