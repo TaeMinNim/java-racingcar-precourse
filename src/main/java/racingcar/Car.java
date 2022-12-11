@@ -20,4 +20,8 @@ public class Car {
         }
         return other;
     }
+
+    public boolean equal(Car other){
+        return this.position == other.position;
+    }
 }
