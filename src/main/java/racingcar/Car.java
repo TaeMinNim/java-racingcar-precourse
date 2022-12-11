@@ -5,7 +5,14 @@ public class Car {
     private int position = 0;
 
     public Car(String name) {
+        validData(name);
         this.name = name;
+    }
+
+    private void validData(String name){
+        if(name.length() > 5){
+            throw new IllegalArgumentException("자동차 이름이 5자를 초과합니다.");
+        }
     }
 
     public void move(int random){
