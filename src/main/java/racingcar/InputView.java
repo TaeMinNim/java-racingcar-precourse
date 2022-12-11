@@ -29,6 +29,9 @@ public class InputView {
         System.out.println("시도할 회수는 몇회인가요?");
         String countString = Console.readLine();
         int countInteger = toInteger(countString);
+        Count count = new Count(countInteger);
+
+        return count.getCount();
     }
 
     private int toInteger(String countString){
