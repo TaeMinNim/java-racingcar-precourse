@@ -36,6 +36,6 @@ public class CarList {
             }
         }
 
-        return carList;
+        return winners;
     }
 }
