@@ -21,7 +21,7 @@ public class InputView {
 
     private List<String> toName(String nameString){
         String[] strings;
-        strings = nameString.split("/");
+        strings = nameString.split(",");
         return Arrays.asList(strings);
     }
 
