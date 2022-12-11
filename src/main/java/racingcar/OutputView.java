@@ -31,7 +31,7 @@ public class OutputView {
         for(int i = 0; i < winners.size(); i++){
             Car winner = winners.get(i);
             System.out.print(winner.getName());
-            if(!(i < winners.size() - 1)){
+            if(i < winners.size() - 1){
                 System.out.print(", ");
             }
         }
