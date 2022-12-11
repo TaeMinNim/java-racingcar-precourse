@@ -18,4 +18,14 @@ public class Controller {
             }
         }
     }
+
+    public void createCount(){
+        while (count == null) {
+            try {
+                count = inputView.inputCount();
+            } catch (IllegalArgumentException e) {
+                outputView.printErrorMessage(e);
+            }
+        }
+    }
 }
