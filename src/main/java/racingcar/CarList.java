@@ -11,8 +11,8 @@ public class CarList {
         this.carList = carList;
     }
 
-    public void tryMoveAll(int count){
-        for(int i =0; i < count; i++){
+    public void tryMoveAll(){
+        for(int i =0; i < carList.size(); i++){
             Car car = carList.get(i);
             int random = randomGenerator.createRandom();
             car.move(random);
