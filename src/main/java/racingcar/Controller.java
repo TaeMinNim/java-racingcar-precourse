@@ -28,4 +28,11 @@ public class Controller {
             }
         }
     }
+
+    public void startRacing(){
+        for(int i = 0; i < count; i++){
+            carList.tryMoveAll();
+            outputView.printMoveResult(carList.getCarList());
+        }
+    }
 }

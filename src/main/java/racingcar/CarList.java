@@ -19,6 +19,10 @@ public class CarList {
         }
     }
 
+    public List<Car> getCarList(){
+        return carList;
+    }
+
     public List<Car> winner(){
         Car winner = carList.get(0);
         for(Car car: carList){
